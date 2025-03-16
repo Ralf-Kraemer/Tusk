@@ -30,7 +30,9 @@ dev_dependencies:
   test: any
   mockito: ^5.0.16
   # additional linters
-  dart_code_metrics: ^5.7.0
+  dart_code_metrics:
+    git:
+      url: https://github.com/Ralf-Kraemer/dart-code-metrics.git
   lints: 1.0.1
   freezed: ^0.15.0+1
   build_runner: ^2.1.4
