@@ -262,7 +262,7 @@ dev_dependencies:
   test: any
 
   # easy mock for tests
-  mockito: '>=4.0.0'
+  mockito: ^5.4.5
   # build tools runner
   # usage example
   build_runner: ^2.2.0
