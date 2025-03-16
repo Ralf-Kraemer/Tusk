@@ -17,11 +17,7 @@ dependencies:
   http: ^0.13.4
   logging: ^1.0.2
 #  path: ^1.8.0
-  hive:
-    git:
-      url: https://github.com/xal/hive
-      ref: xal/nested_type_registry_dev
-      path: hive
+  hive: ^2.2.3
   json_annotation: ^4.3.0
   # WebSockets API mobile implementation
   web_socket_channel: 2.1.0
