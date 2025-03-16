@@ -43,7 +43,7 @@ dependencies:
   uni_links: 0.5.1
 
   # launch browser to view links
-  url_launcher: 6.0.12
+  url_launcher: ^6.3.1
 
   # object serialization
   hive: ^2.2.3
@@ -139,10 +139,10 @@ dependencies:
       url: https://github.com/Ralf-Kraemer/gallery_saver.git
 
   # share actions via native API
-  share_plus: 3.0.4
+  share_plus: 10.1.4
 
   # detect mime type be extension
-  mime: 1.0.1
+  mime: ^2.0.0
 
   # parse html to extract raw text from status content
   html: 0.15.5
@@ -226,7 +226,7 @@ dependencies:
   path: '>=1.8.0'
 
   # code generator: unions, strings, equals & hash, etc
-  freezed_annotation: ^0.15.0
+  freezed_annotation: ^3.0.0
 
   fediverse_api:
     path: ../../packages/fediverse_api
@@ -296,7 +296,7 @@ dev_dependencies:
       url: https://github.com/Ralf-Kraemer/screenshots.git
 
   # code generator: unions, strings, equals & hash, etc
-  freezed: ^2.2.0
+  freezed: ^3.0.4
 
 
 # For information on the generic Dart part of this file, see the

@@ -21,7 +21,7 @@ dependencies:
   json_annotation: ^4.3.0
   # WebSockets API mobile implementation
   web_socket_channel: 2.1.0
-  freezed_annotation: ^0.15.0
+  freezed_annotation: ^3.0.0
   rxdart: ^0.28.0
   collection: ^1.15.0
   path: ^1.8.0
