@@ -38,7 +38,7 @@ dev_dependencies:
   test: any
   mockito: ^5.0.16
   # additional linters
-  dart_code_metrics: ^4.5.0
+  dart_code_metrics: ^5.7.0
   lints: 1.0.1
   hive_generator:
     git:
