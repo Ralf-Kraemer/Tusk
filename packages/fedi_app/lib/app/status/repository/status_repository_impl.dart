@@ -15,7 +15,7 @@ import 'package:fedi_app/app/status/status_model.dart';
 import 'package:fedi_app/app/status/status_model_adapter.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:logging/logging.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 var _logger = Logger('status_repository_impl.dart');
