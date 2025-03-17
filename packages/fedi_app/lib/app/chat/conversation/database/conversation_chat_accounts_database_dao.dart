@@ -1,11 +1,11 @@
 import 'package:fedi_app/app/chat/conversation/database/conversation_chat_accounts_database_model.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/database_dao.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'conversation_chat_accounts_database_dao.g.dart';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbConversationAccounts,
   ],

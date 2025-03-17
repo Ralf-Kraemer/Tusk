@@ -158,7 +158,7 @@ class _$UnifediChatRepositoryOrderingTermDataTearOff {
 
   _UnifediChatRepositoryOrderingTermData call(
       {required UnifediChatOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
+      required drift.OrderingMode orderingMode}) {
     return _UnifediChatRepositoryOrderingTermData(
       orderType: orderType,
       orderingMode: orderingMode,
@@ -173,7 +173,7 @@ const $UnifediChatRepositoryOrderingTermData =
 /// @nodoc
 mixin _$UnifediChatRepositoryOrderingTermData {
   UnifediChatOrderType get orderType => throw _privateConstructorUsedError;
-  moor.OrderingMode get orderingMode => throw _privateConstructorUsedError;
+  drift.OrderingMode get orderingMode => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $UnifediChatRepositoryOrderingTermDataCopyWith<
@@ -187,7 +187,7 @@ abstract class $UnifediChatRepositoryOrderingTermDataCopyWith<$Res> {
           UnifediChatRepositoryOrderingTermData value,
           $Res Function(UnifediChatRepositoryOrderingTermData) then) =
       _$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res>;
-  $Res call({UnifediChatOrderType orderType, moor.OrderingMode orderingMode});
+  $Res call({UnifediChatOrderType orderType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -212,7 +212,7 @@ class _$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -225,7 +225,7 @@ abstract class _$UnifediChatRepositoryOrderingTermDataCopyWith<$Res>
           $Res Function(_UnifediChatRepositoryOrderingTermData) then) =
       __$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res>;
   @override
-  $Res call({UnifediChatOrderType orderType, moor.OrderingMode orderingMode});
+  $Res call({UnifediChatOrderType orderType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -255,7 +255,7 @@ class __$UnifediChatRepositoryOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -271,7 +271,7 @@ class _$_UnifediChatRepositoryOrderingTermData
   @override
   final UnifediChatOrderType orderType;
   @override
-  final moor.OrderingMode orderingMode;
+  final drift.OrderingMode orderingMode;
 
   @override
   String toString() {
@@ -304,14 +304,14 @@ abstract class _UnifediChatRepositoryOrderingTermData
     extends UnifediChatRepositoryOrderingTermData {
   const factory _UnifediChatRepositoryOrderingTermData(
           {required UnifediChatOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
+          required drift.OrderingMode orderingMode}) =
       _$_UnifediChatRepositoryOrderingTermData;
   const _UnifediChatRepositoryOrderingTermData._() : super._();
 
   @override
   UnifediChatOrderType get orderType;
   @override
-  moor.OrderingMode get orderingMode;
+  drift.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
   _$UnifediChatRepositoryOrderingTermDataCopyWith<

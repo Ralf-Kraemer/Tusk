@@ -1,11 +1,11 @@
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/database_dao.dart';
 import 'package:fedi_app/app/status/database/home_timeline_statuses_database_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'home_timeline_statuses_database_dao.g.dart';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbHomeTimelineStatuses,
   ],

@@ -1,6 +1,5 @@
 import 'package:extended_nested_scroll_view/extended_nested_scroll_view.dart'
     as extended_nested_scroll_view;
-import 'package:extended_nested_scroll_view/extended_nested_scroll_view.dart';
 import 'package:fedi_app/app/ui/progress/fedi_circular_progress_indicator.dart';
 import 'package:fedi_app/app/ui/scroll/fedi_nested_scroll_view_bloc.dart';
 import 'package:fedi_app/app/ui/scroll/fedi_nested_scroll_view_widget.dart';
@@ -88,14 +87,14 @@ class FediNestedScrollViewWithNestedScrollableTabsWidget
         fediNestedScrollViewBloc.nestedScrollController;
     // extended_nested_scroll_view required to fix nested scrollables sync issue
 
-    return extended_nested_scroll_view.NestedScrollView(
+    return extended_nested_scroll_view.ExtendedNestedScrollView(
       // we use custom nested scroll controller to achieve scroll callbacks
       // from body scrollables
       controller: nestedScrollController,
       headerSliverBuilder: (BuildContext context, bool? innerBoxIsScrolled) =>
-          buildTopSliverWidgets(context),
+          buildTopSliverWidgets(context),/*
       innerScrollPositionKeyBuilder: () =>
-          _innerScrollPositionKeyBuilder(context),
+          _innerScrollPositionKeyBuilder(context),*/
       body: Builder(
         builder: (context) {
           // required by extended_nested_scroll_view
@@ -247,11 +246,11 @@ class _NestedBodyTabItemWidgetState extends State<_NestedBodyTabItemWidget>
       widget.index,
       Builder(
         builder: (context) => Stack(
-          children: [
+          children: [/*
             NestedScrollViewInnerScrollPositionKeyWidget(
               widget.tabKey,
               widget.tabBodyContentBuilder(context, widget.index),
-            ),
+            ),*/
             if (widget.tabBodyOverlayBuilder != null)
               FediNestedScrollViewWidget.buildOverlay(
                 context,

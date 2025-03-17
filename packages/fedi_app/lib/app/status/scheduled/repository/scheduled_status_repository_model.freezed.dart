@@ -180,7 +180,7 @@ class _$ScheduledStatusRepositoryOrderingTermDataTearOff {
 
   _ScheduledStatusRepositoryOrderingTermData call(
       {required ScheduledStatusRepositoryOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
+      required drift.OrderingMode orderingMode}) {
     return _ScheduledStatusRepositoryOrderingTermData(
       orderType: orderType,
       orderingMode: orderingMode,
@@ -196,7 +196,7 @@ const $ScheduledStatusRepositoryOrderingTermData =
 mixin _$ScheduledStatusRepositoryOrderingTermData {
   ScheduledStatusRepositoryOrderType get orderType =>
       throw _privateConstructorUsedError;
-  moor.OrderingMode get orderingMode => throw _privateConstructorUsedError;
+  drift.OrderingMode get orderingMode => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $ScheduledStatusRepositoryOrderingTermDataCopyWith<
@@ -212,7 +212,7 @@ abstract class $ScheduledStatusRepositoryOrderingTermDataCopyWith<$Res> {
       _$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res>;
   $Res call(
       {ScheduledStatusRepositoryOrderType orderType,
-      moor.OrderingMode orderingMode});
+      drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -238,7 +238,7 @@ class _$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -253,7 +253,7 @@ abstract class _$ScheduledStatusRepositoryOrderingTermDataCopyWith<$Res>
   @override
   $Res call(
       {ScheduledStatusRepositoryOrderType orderType,
-      moor.OrderingMode orderingMode});
+      drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -283,7 +283,7 @@ class __$ScheduledStatusRepositoryOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -298,7 +298,7 @@ class _$_ScheduledStatusRepositoryOrderingTermData
   @override
   final ScheduledStatusRepositoryOrderType orderType;
   @override
-  final moor.OrderingMode orderingMode;
+  final drift.OrderingMode orderingMode;
 
   @override
   String toString() {
@@ -331,13 +331,13 @@ abstract class _ScheduledStatusRepositoryOrderingTermData
     implements ScheduledStatusRepositoryOrderingTermData {
   const factory _ScheduledStatusRepositoryOrderingTermData(
           {required ScheduledStatusRepositoryOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
+          required drift.OrderingMode orderingMode}) =
       _$_ScheduledStatusRepositoryOrderingTermData;
 
   @override
   ScheduledStatusRepositoryOrderType get orderType;
   @override
-  moor.OrderingMode get orderingMode;
+  drift.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
   _$ScheduledStatusRepositoryOrderingTermDataCopyWith<

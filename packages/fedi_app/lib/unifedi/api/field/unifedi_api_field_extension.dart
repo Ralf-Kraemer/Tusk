@@ -1,4 +1,4 @@
-import 'package:flutter_html/html_parser.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:logging/logging.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 

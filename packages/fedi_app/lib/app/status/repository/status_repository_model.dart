@@ -3,7 +3,7 @@ import 'package:fedi_app/app/chat/conversation/conversation_chat_model.dart';
 import 'package:fedi_app/app/filter/filter_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as drift;
 import 'package:unifedi_api/unifedi_api.dart';
 
 part 'status_repository_model.freezed.dart';
@@ -128,7 +128,7 @@ class StatusRepositoryOrderingTermData
     implements RepositoryOrderingTerm {
   const factory StatusRepositoryOrderingTermData({
     required StatusRepositoryOrderType orderByType,
-    required moor.OrderingMode orderingMode,
+    required drift.OrderingMode orderingMode,
   }) = _StatusRepositoryOrderingTermData;
 
   static const List<StatusRepositoryOrderingTermData> defaultTerms = [
@@ -137,23 +137,23 @@ class StatusRepositoryOrderingTermData
 
   static const StatusRepositoryOrderingTermData remoteIdDesc =
       StatusRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderByType: StatusRepositoryOrderType.remoteId,
   );
   static const StatusRepositoryOrderingTermData remoteIdAsc =
       StatusRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderByType: StatusRepositoryOrderType.remoteId,
   );
 
   static const StatusRepositoryOrderingTermData createdAtDesc =
       StatusRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderByType: StatusRepositoryOrderType.createdAt,
   );
   static const StatusRepositoryOrderingTermData createdAtAsc =
       StatusRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderByType: StatusRepositoryOrderType.createdAt,
   );
 }

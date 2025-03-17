@@ -5,11 +5,11 @@ import 'package:fedi_app/app/instance/announcement/instance_announcement_model.d
 import 'package:fedi_app/app/instance/announcement/repository/instance_announcement_repository_model.dart';
 import 'package:fedi_app/date/date_utils.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'instance_announcement_database_dao.g.dart';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbInstanceAnnouncements,
   ],

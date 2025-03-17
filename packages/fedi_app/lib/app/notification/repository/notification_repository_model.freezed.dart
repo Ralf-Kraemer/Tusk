@@ -282,7 +282,7 @@ class _$NotificationRepositoryOrderingTermDataTearOff {
 
   _NotificationRepositoryOrderingTermData call(
       {required NotificationOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
+      required drift.OrderingMode orderingMode}) {
     return _NotificationRepositoryOrderingTermData(
       orderType: orderType,
       orderingMode: orderingMode,
@@ -297,7 +297,7 @@ const $NotificationRepositoryOrderingTermData =
 /// @nodoc
 mixin _$NotificationRepositoryOrderingTermData {
   NotificationOrderType get orderType => throw _privateConstructorUsedError;
-  moor.OrderingMode get orderingMode => throw _privateConstructorUsedError;
+  drift.OrderingMode get orderingMode => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $NotificationRepositoryOrderingTermDataCopyWith<
@@ -311,7 +311,7 @@ abstract class $NotificationRepositoryOrderingTermDataCopyWith<$Res> {
           NotificationRepositoryOrderingTermData value,
           $Res Function(NotificationRepositoryOrderingTermData) then) =
       _$NotificationRepositoryOrderingTermDataCopyWithImpl<$Res>;
-  $Res call({NotificationOrderType orderType, moor.OrderingMode orderingMode});
+  $Res call({NotificationOrderType orderType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -336,7 +336,7 @@ class _$NotificationRepositoryOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -349,7 +349,7 @@ abstract class _$NotificationRepositoryOrderingTermDataCopyWith<$Res>
           $Res Function(_NotificationRepositoryOrderingTermData) then) =
       __$NotificationRepositoryOrderingTermDataCopyWithImpl<$Res>;
   @override
-  $Res call({NotificationOrderType orderType, moor.OrderingMode orderingMode});
+  $Res call({NotificationOrderType orderType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -379,7 +379,7 @@ class __$NotificationRepositoryOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -395,7 +395,7 @@ class _$_NotificationRepositoryOrderingTermData
   @override
   final NotificationOrderType orderType;
   @override
-  final moor.OrderingMode orderingMode;
+  final drift.OrderingMode orderingMode;
 
   @override
   String toString() {
@@ -428,14 +428,14 @@ abstract class _NotificationRepositoryOrderingTermData
     extends NotificationRepositoryOrderingTermData {
   const factory _NotificationRepositoryOrderingTermData(
           {required NotificationOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
+          required drift.OrderingMode orderingMode}) =
       _$_NotificationRepositoryOrderingTermData;
   const _NotificationRepositoryOrderingTermData._() : super._();
 
   @override
   NotificationOrderType get orderType;
   @override
-  moor.OrderingMode get orderingMode;
+  drift.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
   _$NotificationRepositoryOrderingTermDataCopyWith<

@@ -6,7 +6,7 @@ import 'package:fedi_app/app/status/scheduled/repository/scheduled_status_reposi
 import 'package:fedi_app/app/status/scheduled/repository/scheduled_status_repository_model.dart';
 import 'package:fedi_app/app/status/scheduled/scheduled_status_model.dart';
 import 'package:fedi_app/app/status/scheduled/scheduled_status_model_adapter.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 class ScheduledStatusRepository extends PopulatedAppRemoteDatabaseDaoRepository<

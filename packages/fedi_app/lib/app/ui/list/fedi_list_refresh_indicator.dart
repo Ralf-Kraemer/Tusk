@@ -356,7 +356,7 @@ class FediListRefreshIndicatorState extends State<FediListRefreshIndicator>
       return false;
     }
     if (_mode == _RefreshIndicatorMode.drag) {
-      notification.disallowGlow();
+      notification.disallowIndicator();
 
       return true;
     }

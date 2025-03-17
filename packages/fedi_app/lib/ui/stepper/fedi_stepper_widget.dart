@@ -58,6 +58,7 @@ class FediStepperWidget<T extends IFediStepperItem> extends StatelessWidget {
             }
           },
           onStepTapped: fediStepperBloc.goToStepAtIndex,
+          /* 
           controlsBuilder: (
             BuildContext context, {
             VoidCallback? onStepContinue,
@@ -77,6 +78,7 @@ class FediStepperWidget<T extends IFediStepperItem> extends StatelessWidget {
                 ),
             ],
           ),
+          */
           steps: stepperState.steps.asMap().entries.map(
             (entry) {
               var index = entry.key;

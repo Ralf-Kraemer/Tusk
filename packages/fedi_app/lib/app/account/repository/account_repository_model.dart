@@ -4,7 +4,7 @@ import 'package:fedi_app/app/chat/unifedi/unifedi_chat_model.dart';
 import 'package:fedi_app/app/status/status_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as drift;
 
 part 'account_repository_model.freezed.dart';
 
@@ -71,17 +71,17 @@ class AccountRepositoryOrderingTermData
 
   const factory AccountRepositoryOrderingTermData({
     required AccountOrderType orderType,
-    required moor.OrderingMode orderingMode,
+    required drift.OrderingMode orderingMode,
   }) = _AccountRepositoryOrderingTermData;
 
   static const AccountRepositoryOrderingTermData remoteIdDesc =
       AccountRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: AccountOrderType.remoteId,
   );
   static const AccountRepositoryOrderingTermData remoteIdAsc =
       AccountRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: AccountOrderType.remoteId,
   );
 

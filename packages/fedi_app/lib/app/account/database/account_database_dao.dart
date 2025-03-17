@@ -4,7 +4,7 @@ import 'package:fedi_app/app/account/repository/account_repository_model.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/remote/populated_app_remote_database_dao.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'account_database_dao.g.dart';
 
@@ -16,7 +16,7 @@ var _statusFavouritedAccounts = 'statusFavouritedAccounts';
 var _conversationAccountsAliasId = 'conversationAccounts';
 var _chatAccountsAliasId = 'chatAccountsAliasId';
 
-@UseDao(
+@DriftAccessor(
   tables: [DbAccounts],
 )
 class AccountDao extends PopulatedAppRemoteDatabaseDao<

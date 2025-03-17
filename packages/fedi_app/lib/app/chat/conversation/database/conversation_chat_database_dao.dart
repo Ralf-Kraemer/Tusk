@@ -5,7 +5,7 @@ import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/remote/populated_app_remote_database_dao.dart';
 import 'package:fedi_app/app/status/status_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'conversation_chat_database_dao.g.dart';
 
@@ -21,7 +21,7 @@ var _statusReplyAccountAliasId = 'statusReplyAccount';
 var _statusReplyReblogAliasId = 'statusReplyReblog';
 var _statusReplyReblogAccountAliasId = 'statusReplyReblogAccount';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbConversations,
   ],

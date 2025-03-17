@@ -1,6 +1,6 @@
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as drift;
 
 part 'draft_status_repository_model.freezed.dart';
 
@@ -25,27 +25,27 @@ class DraftStatusRepositoryOrderingTermData
 
   const factory DraftStatusRepositoryOrderingTermData({
     required DraftStatusRepositoryOrderType orderType,
-    required moor.OrderingMode orderingMode,
+    required drift.OrderingMode orderingMode,
   }) = _DraftStatusRepositoryOrderingTermData;
 
   static const DraftStatusRepositoryOrderingTermData localIdDesc =
       DraftStatusRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: DraftStatusRepositoryOrderType.localId,
   );
   static const DraftStatusRepositoryOrderingTermData localIdAsc =
       DraftStatusRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: DraftStatusRepositoryOrderType.localId,
   );
   static const DraftStatusRepositoryOrderingTermData updatedAtDesc =
       DraftStatusRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: DraftStatusRepositoryOrderType.updatedAt,
   );
   static const DraftStatusRepositoryOrderingTermData updatedAtAsc =
       DraftStatusRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: DraftStatusRepositoryOrderType.updatedAt,
   );
 

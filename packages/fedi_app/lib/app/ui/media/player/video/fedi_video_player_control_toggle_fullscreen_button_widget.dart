@@ -10,7 +10,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:logging/logging.dart';
-import 'package:wakelock/wakelock.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
 
 final _logger =
     Logger('fedi_video_player_control_toggle_fullscreen_button_widget.dart');
@@ -101,14 +101,14 @@ Future<void> pushFullScreenPage(
   }
 
   if (!videoMediaPlayerBloc.isNeedEnableWakelockOnFullScreen) {
-    await Wakelock.enable();
+    await WakelockPlus.enable();
   }
 
   await Navigator.of(context, rootNavigator: true).push<void>(route);
 
   // The wakelock plugins checks whether it needs to perform an action internally,
   // so we do not need to check Wakelock.isEnabled.
-  await Wakelock.disable();
+  await WakelockPlus.disable();
 
   await SystemChrome.setEnabledSystemUIMode(
     SystemUiMode.manual,

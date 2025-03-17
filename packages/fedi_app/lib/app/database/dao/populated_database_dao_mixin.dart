@@ -2,8 +2,8 @@
 
 import 'package:fedi_app/app/database/dao/app_database_dao.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart';
+import 'package:drift/drift.dart' as drift;
 
 mixin PopulatedDatabaseDaoMixin<
         DbItem extends DataClass,
@@ -59,7 +59,7 @@ mixin PopulatedDatabaseDaoMixin<
     var query = startSelectQuery();
     query.orderBy(
       [
-        (tbl) => moor.OrderingTerm.desc(
+        (tbl) => drift.OrderingTerm.desc(
               CustomExpression<dynamic>('$tableName.$idFieldName'),
             ),
       ],
@@ -91,7 +91,7 @@ mixin PopulatedDatabaseDaoMixin<
     var query = startSelectQuery();
     query.orderBy(
       [
-        (tbl) => moor.OrderingTerm.asc(
+        (tbl) => drift.OrderingTerm.asc(
               CustomExpression<dynamic>('$tableName.$idFieldName'),
             ),
       ],
@@ -123,7 +123,7 @@ mixin PopulatedDatabaseDaoMixin<
     var query = startSelectQuery();
     query.orderBy(
       [
-        (tbl) => moor.OrderingTerm.desc(
+        (tbl) => drift.OrderingTerm.desc(
               CustomExpression<dynamic>('$tableName.$idFieldName'),
             ),
       ],
@@ -156,7 +156,7 @@ mixin PopulatedDatabaseDaoMixin<
     var query = startSelectQuery();
     query.orderBy(
       [
-        (tbl) => moor.OrderingTerm.asc(
+        (tbl) => drift.OrderingTerm.asc(
               CustomExpression<dynamic>('$tableName.$idFieldName'),
             ),
       ],

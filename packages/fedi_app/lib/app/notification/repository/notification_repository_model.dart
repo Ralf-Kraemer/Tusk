@@ -1,7 +1,7 @@
 import 'package:fedi_app/app/status/repository/status_repository_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as drift;
 import 'package:unifedi_api/unifedi_api.dart';
 
 part 'notification_repository_model.freezed.dart';
@@ -49,28 +49,28 @@ class NotificationRepositoryOrderingTermData
 
   const factory NotificationRepositoryOrderingTermData({
     required NotificationOrderType orderType,
-    required moor.OrderingMode orderingMode,
+    required drift.OrderingMode orderingMode,
   }) = _NotificationRepositoryOrderingTermData;
 
   static const NotificationRepositoryOrderingTermData remoteIdDesc =
       NotificationRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: NotificationOrderType.remoteId,
   );
   static const NotificationRepositoryOrderingTermData remoteIdAsc =
       NotificationRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: NotificationOrderType.remoteId,
   );
 
   static const NotificationRepositoryOrderingTermData createdAtDesc =
       NotificationRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: NotificationOrderType.createdAt,
   );
   static const NotificationRepositoryOrderingTermData createdAtAsc =
       NotificationRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: NotificationOrderType.createdAt,
   );
 

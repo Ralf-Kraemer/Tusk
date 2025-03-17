@@ -4,11 +4,11 @@ import 'package:fedi_app/app/status/scheduled/database/scheduled_status_database
 import 'package:fedi_app/app/status/scheduled/repository/scheduled_status_repository_model.dart';
 import 'package:fedi_app/app/status/scheduled/scheduled_status_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'scheduled_status_database_dao.g.dart';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbScheduledStatuses,
   ],

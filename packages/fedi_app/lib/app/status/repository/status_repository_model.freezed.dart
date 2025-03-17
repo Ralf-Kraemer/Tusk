@@ -928,7 +928,7 @@ class _$StatusRepositoryOrderingTermDataTearOff {
 
   _StatusRepositoryOrderingTermData call(
       {required StatusRepositoryOrderType orderByType,
-      required moor.OrderingMode orderingMode}) {
+      required drift.OrderingMode orderingMode}) {
     return _StatusRepositoryOrderingTermData(
       orderByType: orderByType,
       orderingMode: orderingMode,
@@ -944,7 +944,7 @@ const $StatusRepositoryOrderingTermData =
 mixin _$StatusRepositoryOrderingTermData {
   StatusRepositoryOrderType get orderByType =>
       throw _privateConstructorUsedError;
-  moor.OrderingMode get orderingMode => throw _privateConstructorUsedError;
+  drift.OrderingMode get orderingMode => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $StatusRepositoryOrderingTermDataCopyWith<StatusRepositoryOrderingTermData>
@@ -958,7 +958,7 @@ abstract class $StatusRepositoryOrderingTermDataCopyWith<$Res> {
           $Res Function(StatusRepositoryOrderingTermData) then) =
       _$StatusRepositoryOrderingTermDataCopyWithImpl<$Res>;
   $Res call(
-      {StatusRepositoryOrderType orderByType, moor.OrderingMode orderingMode});
+      {StatusRepositoryOrderType orderByType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -983,7 +983,7 @@ class _$StatusRepositoryOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -997,7 +997,7 @@ abstract class _$StatusRepositoryOrderingTermDataCopyWith<$Res>
       __$StatusRepositoryOrderingTermDataCopyWithImpl<$Res>;
   @override
   $Res call(
-      {StatusRepositoryOrderType orderByType, moor.OrderingMode orderingMode});
+      {StatusRepositoryOrderType orderByType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -1026,7 +1026,7 @@ class __$StatusRepositoryOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -1041,7 +1041,7 @@ class _$_StatusRepositoryOrderingTermData
   @override
   final StatusRepositoryOrderType orderByType;
   @override
-  final moor.OrderingMode orderingMode;
+  final drift.OrderingMode orderingMode;
 
   @override
   String toString() {
@@ -1073,13 +1073,13 @@ abstract class _StatusRepositoryOrderingTermData
     implements StatusRepositoryOrderingTermData {
   const factory _StatusRepositoryOrderingTermData(
           {required StatusRepositoryOrderType orderByType,
-          required moor.OrderingMode orderingMode}) =
+          required drift.OrderingMode orderingMode}) =
       _$_StatusRepositoryOrderingTermData;
 
   @override
   StatusRepositoryOrderType get orderByType;
   @override
-  moor.OrderingMode get orderingMode;
+  drift.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
   _$StatusRepositoryOrderingTermDataCopyWith<_StatusRepositoryOrderingTermData>

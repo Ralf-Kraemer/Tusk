@@ -94,7 +94,16 @@ class PhotoManagerMediaDeviceFileMetadata
       quality: _jpegQuality,
     );
 
-    return result!;
+    if (result != null) {
+
+      File outputImage = File(result.path);
+      return outputImage;
+
+    }
+    else {
+      return null;
+    }
+
   }
 }
 

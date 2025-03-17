@@ -32,9 +32,7 @@ class ConnectionService extends DisposableOwner implements IConnectionService {
 
   ConnectionService() {
     connectivity.onConnectivityChanged
-        .listen(
-          _updateConnectivity,
-        )
+        .listen((connectionState) => _updateConnectivity)
         .disposeWith(this);
   }
 
@@ -45,12 +43,12 @@ class ConnectionService extends DisposableOwner implements IConnectionService {
 
   Future<void> _checkConnectivity() async {
     var newState = await connectivity.checkConnectivity();
-    _updateConnectivity(newState);
+    _updateConnectivity(newState[0]);
   }
 
-  void _updateConnectivity(ConnectivityResult newState) {
-    _logger.fine(() => 'newState $newState');
+  void _updateConnectivity(ConnectivityResult networkState) {
+    _logger.fine(() => 'newState $networkState');
 
-    _connectionStateSubject.add(newState);
+    _connectionStateSubject.add(networkState);
   }
 }

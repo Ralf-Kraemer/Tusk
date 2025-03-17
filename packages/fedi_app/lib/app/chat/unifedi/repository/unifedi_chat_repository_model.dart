@@ -1,6 +1,6 @@
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as drift;
 
 part 'unifedi_chat_repository_model.freezed.dart';
 
@@ -29,28 +29,28 @@ class UnifediChatRepositoryOrderingTermData
 
   const factory UnifediChatRepositoryOrderingTermData({
     required UnifediChatOrderType orderType,
-    required moor.OrderingMode orderingMode,
+    required drift.OrderingMode orderingMode,
   }) = _UnifediChatRepositoryOrderingTermData;
 
   static const UnifediChatRepositoryOrderingTermData remoteIdDesc =
       UnifediChatRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: UnifediChatOrderType.remoteId,
   );
   static const UnifediChatRepositoryOrderingTermData remoteIdAsc =
       UnifediChatRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: UnifediChatOrderType.remoteId,
   );
 
   static const UnifediChatRepositoryOrderingTermData updatedAtDesc =
       UnifediChatRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: UnifediChatOrderType.updatedAt,
   );
   static const UnifediChatRepositoryOrderingTermData updatedAtAsc =
       UnifediChatRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: UnifediChatOrderType.updatedAt,
   );
 

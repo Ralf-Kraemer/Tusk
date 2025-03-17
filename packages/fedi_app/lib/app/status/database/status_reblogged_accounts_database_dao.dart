@@ -1,11 +1,11 @@
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/database_dao.dart';
 import 'package:fedi_app/app/status/database/status_reblogged_accounts_database_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'status_reblogged_accounts_database_dao.g.dart';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbStatusRebloggedAccounts,
   ],

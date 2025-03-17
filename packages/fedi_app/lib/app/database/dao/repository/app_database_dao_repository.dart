@@ -2,7 +2,7 @@ import 'package:fedi_app/app/database/dao/app_database_dao.dart';
 import 'package:fedi_app/app/database/dao/repository/database_dao_repository.dart';
 import 'package:fedi_app/repository/repository.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 abstract class AppDatabaseDaoRepository<
         DbItem extends DataClass,

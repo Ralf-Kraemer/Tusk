@@ -14,7 +14,7 @@ import 'package:fedi_app/app/database/dao/populated_database_dao_mixin.dart';
 import 'package:fedi_app/app/database/dao/repository/remote/populated_app_remote_database_dao_repository.dart';
 import 'package:fedi_app/app/status/database/status_favourited_accounts_database_dao.dart';
 import 'package:fedi_app/app/status/database/status_reblogged_accounts_database_dao.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 class AccountRepository extends PopulatedAppRemoteDatabaseDaoRepository<

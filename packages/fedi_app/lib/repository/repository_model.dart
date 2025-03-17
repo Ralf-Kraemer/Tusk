@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as drift;
 
 part 'repository_model.freezed.dart';
 
@@ -15,7 +15,7 @@ class RepositoryPagination<T> with _$RepositoryPagination<T> {
 }
 
 abstract class RepositoryOrderingTerm {
-  moor.OrderingMode get orderingMode;
+  drift.OrderingMode get orderingMode;
 
   const RepositoryOrderingTerm();
 }

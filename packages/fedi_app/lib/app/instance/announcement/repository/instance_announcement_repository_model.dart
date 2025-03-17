@@ -1,6 +1,6 @@
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as drift;
 
 part 'instance_announcement_repository_model.freezed.dart';
 
@@ -43,27 +43,27 @@ class InstanceAnnouncementOrderingTermData
 
   const factory InstanceAnnouncementOrderingTermData({
     required InstanceAnnouncementOrderType orderType,
-    required moor.OrderingMode orderingMode,
+    required drift.OrderingMode orderingMode,
   }) = _InstanceAnnouncementOrderingTermData;
 
   static const InstanceAnnouncementOrderingTermData remoteIdDesc =
       InstanceAnnouncementOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: InstanceAnnouncementOrderType.remoteId,
   );
   static const InstanceAnnouncementOrderingTermData remoteIdAsc =
       InstanceAnnouncementOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: InstanceAnnouncementOrderType.remoteId,
   );
   static const InstanceAnnouncementOrderingTermData updatedAtDesc =
       InstanceAnnouncementOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: InstanceAnnouncementOrderType.updatedAt,
   );
   static const InstanceAnnouncementOrderingTermData updatedAtAsc =
       InstanceAnnouncementOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: InstanceAnnouncementOrderType.updatedAt,
   );
 

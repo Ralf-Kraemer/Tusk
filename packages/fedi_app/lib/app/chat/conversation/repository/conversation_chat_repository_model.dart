@@ -1,6 +1,6 @@
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as drift;
 
 part 'conversation_chat_repository_model.freezed.dart';
 
@@ -27,28 +27,28 @@ class ConversationRepositoryChatOrderingTermData
     implements RepositoryOrderingTerm {
   const factory ConversationRepositoryChatOrderingTermData({
     required ConversationChatOrderType orderType,
-    required moor.OrderingMode orderingMode,
+    required drift.OrderingMode orderingMode,
   }) = _ConversationRepositoryChatOrderingTermData;
 
   static const ConversationRepositoryChatOrderingTermData remoteIdDesc =
       ConversationRepositoryChatOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: ConversationChatOrderType.remoteId,
   );
   static const ConversationRepositoryChatOrderingTermData remoteIdAsc =
       ConversationRepositoryChatOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: ConversationChatOrderType.remoteId,
   );
 
   static const ConversationRepositoryChatOrderingTermData updatedAtDesc =
       ConversationRepositoryChatOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: ConversationChatOrderType.updatedAt,
   );
   static const ConversationRepositoryChatOrderingTermData updatedAtAsc =
       ConversationRepositoryChatOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: ConversationChatOrderType.updatedAt,
   );
 

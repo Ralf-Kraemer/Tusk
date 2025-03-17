@@ -9,7 +9,7 @@ import 'package:fedi_app/app/status/post/post_status_model.dart';
 import 'package:fedi_app/app/status/repository/status_repository.dart';
 import 'package:fedi_app/app/status/scheduled/repository/scheduled_status_repository.dart';
 import 'package:flutter/widgets.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 import 'package:provider/provider.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:unifedi_api/unifedi_api.dart';

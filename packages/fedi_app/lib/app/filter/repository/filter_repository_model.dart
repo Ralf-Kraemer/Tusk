@@ -1,6 +1,6 @@
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as drift;
 import 'package:unifedi_api/unifedi_api.dart';
 
 part 'filter_repository_model.freezed.dart';
@@ -25,15 +25,15 @@ class FilterOrderingTermData
     implements RepositoryOrderingTerm {
   const factory FilterOrderingTermData({
     required FilterOrderType orderType,
-    required moor.OrderingMode orderingMode,
+    required drift.OrderingMode orderingMode,
   }) = _FilterOrderingTermData;
 
   static const FilterOrderingTermData remoteIdDesc = FilterOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: FilterOrderType.remoteId,
   );
   static const FilterOrderingTermData remoteIdAsc = FilterOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: FilterOrderType.remoteId,
   );
 

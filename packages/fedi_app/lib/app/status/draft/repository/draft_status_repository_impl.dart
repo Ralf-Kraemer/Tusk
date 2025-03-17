@@ -5,7 +5,7 @@ import 'package:fedi_app/app/status/draft/database/draft_status_database_dao.dar
 import 'package:fedi_app/app/status/draft/draft_status_model.dart';
 import 'package:fedi_app/app/status/draft/repository/draft_status_repository.dart';
 import 'package:fedi_app/app/status/draft/repository/draft_status_repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 class DraftStatusRepository extends PopulatedAppLocalDatabaseDaoRepository<
     DbDraftStatus,

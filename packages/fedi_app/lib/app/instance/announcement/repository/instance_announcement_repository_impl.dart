@@ -6,7 +6,7 @@ import 'package:fedi_app/app/instance/announcement/instance_announcement_model.d
 import 'package:fedi_app/app/instance/announcement/instance_announcement_model_adapter.dart';
 import 'package:fedi_app/app/instance/announcement/repository/instance_announcement_repository.dart';
 import 'package:fedi_app/app/instance/announcement/repository/instance_announcement_repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 import 'package:unifedi_api/unifedi_api.dart';
 
 class InstanceAnnouncementRepository

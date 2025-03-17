@@ -162,7 +162,7 @@ class _$ConversationRepositoryChatOrderingTermDataTearOff {
 
   _ConversationRepositoryChatOrderingTermData call(
       {required ConversationChatOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
+      required drift.OrderingMode orderingMode}) {
     return _ConversationRepositoryChatOrderingTermData(
       orderType: orderType,
       orderingMode: orderingMode,
@@ -177,7 +177,7 @@ const $ConversationRepositoryChatOrderingTermData =
 /// @nodoc
 mixin _$ConversationRepositoryChatOrderingTermData {
   ConversationChatOrderType get orderType => throw _privateConstructorUsedError;
-  moor.OrderingMode get orderingMode => throw _privateConstructorUsedError;
+  drift.OrderingMode get orderingMode => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $ConversationRepositoryChatOrderingTermDataCopyWith<
@@ -192,7 +192,7 @@ abstract class $ConversationRepositoryChatOrderingTermDataCopyWith<$Res> {
           $Res Function(ConversationRepositoryChatOrderingTermData) then) =
       _$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res>;
   $Res call(
-      {ConversationChatOrderType orderType, moor.OrderingMode orderingMode});
+      {ConversationChatOrderType orderType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -218,7 +218,7 @@ class _$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -232,7 +232,7 @@ abstract class _$ConversationRepositoryChatOrderingTermDataCopyWith<$Res>
       __$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res>;
   @override
   $Res call(
-      {ConversationChatOrderType orderType, moor.OrderingMode orderingMode});
+      {ConversationChatOrderType orderType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -262,7 +262,7 @@ class __$ConversationRepositoryChatOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -277,7 +277,7 @@ class _$_ConversationRepositoryChatOrderingTermData
   @override
   final ConversationChatOrderType orderType;
   @override
-  final moor.OrderingMode orderingMode;
+  final drift.OrderingMode orderingMode;
 
   @override
   String toString() {
@@ -310,13 +310,13 @@ abstract class _ConversationRepositoryChatOrderingTermData
     implements ConversationRepositoryChatOrderingTermData {
   const factory _ConversationRepositoryChatOrderingTermData(
           {required ConversationChatOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
+          required drift.OrderingMode orderingMode}) =
       _$_ConversationRepositoryChatOrderingTermData;
 
   @override
   ConversationChatOrderType get orderType;
   @override
-  moor.OrderingMode get orderingMode;
+  drift.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
   _$ConversationRepositoryChatOrderingTermDataCopyWith<

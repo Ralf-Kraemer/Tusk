@@ -1,6 +1,6 @@
 import 'package:fedi_app/app/moor/moor_converters.dart';
-import 'package:fedi_app/moor/moor_json_type_converter.dart';
-import 'package:moor/moor.dart';
+import 'package:fedi_app/drift/drift_json_type_converter.dart';
+import 'package:drift/drift.dart';
 
 // todo: add foreign keys
 @DataClassName('DbAccount')

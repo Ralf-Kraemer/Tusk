@@ -5,13 +5,13 @@ import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/remote/populated_app_remote_database_dao.dart';
 import 'package:fedi_app/app/pending/pending_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'unifedi_chat_message_database_dao.g.dart';
 
 var _accountAliasId = 'account';
 
-@UseDao(
+@DriftAccessor(
   tables: [DbChatMessages],
 )
 class ChatMessageDao extends PopulatedAppRemoteDatabaseDao<

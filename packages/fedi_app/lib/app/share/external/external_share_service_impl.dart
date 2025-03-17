@@ -75,9 +75,9 @@ class ExternalShareService extends DisposableOwner
         ),
       );
 
-      await Share.shareFiles(
+      await Share.shareXFiles(
         [
-          file.path,
+          XFile(file.path),
         ],
         subject: popupTitle,
         text: actualText,
@@ -116,9 +116,9 @@ class ExternalShareService extends DisposableOwner
         ),
       );
 
-      await Share.shareFiles(
+      await Share.shareXFiles(
         [
-          file.path,
+          XFile(file.path),
         ],
         subject: popupTitle,
       );

@@ -4,11 +4,11 @@ import 'package:fedi_app/app/status/draft/database/draft_status_database_model.d
 import 'package:fedi_app/app/status/draft/draft_status_model.dart';
 import 'package:fedi_app/app/status/draft/repository/draft_status_repository_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'draft_status_database_dao.g.dart';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbDraftStatuses,
   ],
@@ -75,7 +75,7 @@ class DraftStatusDao extends PopulatedAppLocalDatabaseDao<
 
     if (minimumExist) {
       query.where(
-        (notification) => notification.updatedAt.isBiggerThanValue(
+        (notification) => notification.updatedAt.isAfter(
           minimumUpdatedAt,
         ),
       );
@@ -83,7 +83,7 @@ class DraftStatusDao extends PopulatedAppLocalDatabaseDao<
     if (maximumExist) {
       query.where(
         (notification) =>
-            notification.updatedAt.isSmallerThanValue(maximumUpdatedAt),
+            notification.updatedAt.isBefore(maximumUpdatedAt),
       );
     }
   }

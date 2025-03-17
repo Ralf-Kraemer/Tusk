@@ -2,7 +2,7 @@ import 'package:easy_dispose/easy_dispose.dart';
 import 'package:fedi_app/app/status/draft/draft_status_model.dart';
 import 'package:fedi_app/app/status/post/post_status_model.dart';
 import 'package:flutter/widgets.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 import 'package:provider/provider.dart';
 
 abstract class IDraftStatusBloc implements IDisposable {

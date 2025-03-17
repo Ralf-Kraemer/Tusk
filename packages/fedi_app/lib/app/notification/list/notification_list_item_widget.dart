@@ -99,7 +99,7 @@ class _NotificationListItemBodyWidget extends StatelessWidget {
           var dismissed = notificationState?.dismissed ?? false;
 
           return Slidable(
-            actionPane: const SlidableDrawerActionPane(),
+            startActionPane: const ActionPane(),
             // ignore: no-magic-number
             actionExtentRatio: 0.25,
             secondaryActions: <Widget>[
@@ -150,10 +150,10 @@ class _NotificationListItemBodyMarkAsReadActionWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var notificationBloc = INotificationBloc.of(context);
 
-    return IconSlideAction(
+    return SlidableAction(
       icon: FediIcons.check,
-      caption: S.of(context).app_notification_action_markAsRead,
-      color: IFediUiColorTheme.of(context).white,
+      label: S.of(context).app_notification_action_markAsRead,
+      foregroundColor: IFediUiColorTheme.of(context).white,
       onTap: () {
         // ignore: avoid-ignoring-return-values
         UnifediAsyncOperationHelper.performUnifediAsyncOperation<void>(

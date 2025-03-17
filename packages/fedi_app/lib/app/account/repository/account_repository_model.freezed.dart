@@ -306,7 +306,7 @@ class _$AccountRepositoryOrderingTermDataTearOff {
 
   _AccountRepositoryOrderingTermData call(
       {required AccountOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
+      required drift.OrderingMode orderingMode}) {
     return _AccountRepositoryOrderingTermData(
       orderType: orderType,
       orderingMode: orderingMode,
@@ -321,7 +321,7 @@ const $AccountRepositoryOrderingTermData =
 /// @nodoc
 mixin _$AccountRepositoryOrderingTermData {
   AccountOrderType get orderType => throw _privateConstructorUsedError;
-  moor.OrderingMode get orderingMode => throw _privateConstructorUsedError;
+  drift.OrderingMode get orderingMode => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $AccountRepositoryOrderingTermDataCopyWith<AccountRepositoryOrderingTermData>
@@ -334,7 +334,7 @@ abstract class $AccountRepositoryOrderingTermDataCopyWith<$Res> {
           AccountRepositoryOrderingTermData value,
           $Res Function(AccountRepositoryOrderingTermData) then) =
       _$AccountRepositoryOrderingTermDataCopyWithImpl<$Res>;
-  $Res call({AccountOrderType orderType, moor.OrderingMode orderingMode});
+  $Res call({AccountOrderType orderType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -359,7 +359,7 @@ class _$AccountRepositoryOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -372,7 +372,7 @@ abstract class _$AccountRepositoryOrderingTermDataCopyWith<$Res>
           $Res Function(_AccountRepositoryOrderingTermData) then) =
       __$AccountRepositoryOrderingTermDataCopyWithImpl<$Res>;
   @override
-  $Res call({AccountOrderType orderType, moor.OrderingMode orderingMode});
+  $Res call({AccountOrderType orderType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -401,7 +401,7 @@ class __$AccountRepositoryOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -417,7 +417,7 @@ class _$_AccountRepositoryOrderingTermData
   @override
   final AccountOrderType orderType;
   @override
-  final moor.OrderingMode orderingMode;
+  final drift.OrderingMode orderingMode;
 
   @override
   String toString() {
@@ -450,14 +450,14 @@ abstract class _AccountRepositoryOrderingTermData
     extends AccountRepositoryOrderingTermData {
   const factory _AccountRepositoryOrderingTermData(
           {required AccountOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
+          required drift.OrderingMode orderingMode}) =
       _$_AccountRepositoryOrderingTermData;
   const _AccountRepositoryOrderingTermData._() : super._();
 
   @override
   AccountOrderType get orderType;
   @override
-  moor.OrderingMode get orderingMode;
+  drift.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
   _$AccountRepositoryOrderingTermDataCopyWith<

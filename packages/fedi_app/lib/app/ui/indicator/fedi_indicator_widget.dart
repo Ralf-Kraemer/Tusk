@@ -29,7 +29,7 @@ class FediIndicatorWidget extends StatelessWidget {
         shape: BoxShape.circle,
         color: active
             ? Theme.of(context).primaryColor
-            : Theme.of(context).backgroundColor,
+            : Theme.of(context).scaffoldBackgroundColor,
         border: Border.all(
           // ignore: no-magic-number
           width: 1.0, color: fediUiColorTheme.white,

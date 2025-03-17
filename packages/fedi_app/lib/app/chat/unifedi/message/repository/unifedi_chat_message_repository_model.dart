@@ -1,7 +1,7 @@
 import 'package:fedi_app/app/chat/unifedi/unifedi_chat_model.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:moor/moor.dart' as moor;
+import 'package:drift/drift.dart' as drift;
 
 part 'unifedi_chat_message_repository_model.freezed.dart';
 
@@ -53,28 +53,28 @@ class UnifediChatMessageRepositoryOrderingTermData
   const UnifediChatMessageRepositoryOrderingTermData._();
   const factory UnifediChatMessageRepositoryOrderingTermData({
     required UnifediChatMessageOrderType orderType,
-    required moor.OrderingMode orderingMode,
+    required drift.OrderingMode orderingMode,
   }) = _UnifediChatMessageRepositoryOrderingTermData;
 
   static const UnifediChatMessageRepositoryOrderingTermData remoteIdDesc =
       UnifediChatMessageRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: UnifediChatMessageOrderType.remoteId,
   );
   static const UnifediChatMessageRepositoryOrderingTermData remoteIdAsc =
       UnifediChatMessageRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: UnifediChatMessageOrderType.remoteId,
   );
 
   static const UnifediChatMessageRepositoryOrderingTermData createdAtDesc =
       UnifediChatMessageRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.desc,
+    orderingMode: drift.OrderingMode.desc,
     orderType: UnifediChatMessageOrderType.createdAt,
   );
   static const UnifediChatMessageRepositoryOrderingTermData createdAtAsc =
       UnifediChatMessageRepositoryOrderingTermData(
-    orderingMode: moor.OrderingMode.asc,
+    orderingMode: drift.OrderingMode.asc,
     orderType: UnifediChatMessageOrderType.createdAt,
   );
 

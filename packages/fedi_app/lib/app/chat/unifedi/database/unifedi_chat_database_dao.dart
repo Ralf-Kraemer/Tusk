@@ -6,7 +6,7 @@ import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/remote/populated_app_remote_database_dao.dart';
 import 'package:fedi_app/repository/repository_model.dart';
 import 'package:logging/logging.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'unifedi_chat_database_dao.g.dart';
 
@@ -17,7 +17,7 @@ var _chatMessageAccountAliasId = 'chatMessageAccount';
 
 final _logger = Logger('unifedi_chat_database_dao.dart');
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbChats,
   ],

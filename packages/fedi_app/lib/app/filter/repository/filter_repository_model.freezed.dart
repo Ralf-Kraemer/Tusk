@@ -179,7 +179,7 @@ class _$FilterOrderingTermDataTearOff {
 
   _FilterOrderingTermData call(
       {required FilterOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
+      required drift.OrderingMode orderingMode}) {
     return _FilterOrderingTermData(
       orderType: orderType,
       orderingMode: orderingMode,
@@ -193,7 +193,7 @@ const $FilterOrderingTermData = _$FilterOrderingTermDataTearOff();
 /// @nodoc
 mixin _$FilterOrderingTermData {
   FilterOrderType get orderType => throw _privateConstructorUsedError;
-  moor.OrderingMode get orderingMode => throw _privateConstructorUsedError;
+  drift.OrderingMode get orderingMode => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $FilterOrderingTermDataCopyWith<FilterOrderingTermData> get copyWith =>
@@ -205,7 +205,7 @@ abstract class $FilterOrderingTermDataCopyWith<$Res> {
   factory $FilterOrderingTermDataCopyWith(FilterOrderingTermData value,
           $Res Function(FilterOrderingTermData) then) =
       _$FilterOrderingTermDataCopyWithImpl<$Res>;
-  $Res call({FilterOrderType orderType, moor.OrderingMode orderingMode});
+  $Res call({FilterOrderType orderType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -230,7 +230,7 @@ class _$FilterOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -242,7 +242,7 @@ abstract class _$FilterOrderingTermDataCopyWith<$Res>
           $Res Function(_FilterOrderingTermData) then) =
       __$FilterOrderingTermDataCopyWithImpl<$Res>;
   @override
-  $Res call({FilterOrderType orderType, moor.OrderingMode orderingMode});
+  $Res call({FilterOrderType orderType, drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -269,7 +269,7 @@ class __$FilterOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -283,7 +283,7 @@ class _$_FilterOrderingTermData implements _FilterOrderingTermData {
   @override
   final FilterOrderType orderType;
   @override
-  final moor.OrderingMode orderingMode;
+  final drift.OrderingMode orderingMode;
 
   @override
   String toString() {
@@ -314,12 +314,12 @@ class _$_FilterOrderingTermData implements _FilterOrderingTermData {
 abstract class _FilterOrderingTermData implements FilterOrderingTermData {
   const factory _FilterOrderingTermData(
       {required FilterOrderType orderType,
-      required moor.OrderingMode orderingMode}) = _$_FilterOrderingTermData;
+      required drift.OrderingMode orderingMode}) = _$_FilterOrderingTermData;
 
   @override
   FilterOrderType get orderType;
   @override
-  moor.OrderingMode get orderingMode;
+  drift.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
   _$FilterOrderingTermDataCopyWith<_FilterOrderingTermData> get copyWith =>

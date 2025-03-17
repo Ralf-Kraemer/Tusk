@@ -1,5 +1,5 @@
-import 'package:fedi_app/moor/moor_json_type_converter.dart';
-import 'package:moor/moor.dart';
+import 'package:fedi_app/drift/drift_json_type_converter.dart';
+import 'package:drift/drift.dart';
 
 @DataClassName('DbFilter')
 class DbFilters extends Table {

@@ -1,7 +1,7 @@
 import 'package:fedi_app/app/database/dao/populated_database_dao_mixin.dart';
 import 'package:fedi_app/app/database/dao/repository/app_database_dao_repository.dart';
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 mixin PopulatedDatabaseDaoRepositoryMixin<
         DbItem extends DataClass,

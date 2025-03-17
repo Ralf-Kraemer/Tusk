@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 abstract class JsonDatabaseConverter<T> extends TypeConverter<T, String> {
   const JsonDatabaseConverter();
@@ -63,7 +63,7 @@ abstract class JsonListDatabaseConverter<T>
   }
 }
 
-class StringListDatabaseConverter extends TypeConverter<List<String>, String> {
+abstract class StringListDatabaseConverter extends TypeConverter<List<String>, String> {
   const StringListDatabaseConverter();
 
   @override

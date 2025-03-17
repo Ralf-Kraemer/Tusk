@@ -209,7 +209,7 @@ class _$InstanceAnnouncementOrderingTermDataTearOff {
 
   _InstanceAnnouncementOrderingTermData call(
       {required InstanceAnnouncementOrderType orderType,
-      required moor.OrderingMode orderingMode}) {
+      required drift.OrderingMode orderingMode}) {
     return _InstanceAnnouncementOrderingTermData(
       orderType: orderType,
       orderingMode: orderingMode,
@@ -225,7 +225,7 @@ const $InstanceAnnouncementOrderingTermData =
 mixin _$InstanceAnnouncementOrderingTermData {
   InstanceAnnouncementOrderType get orderType =>
       throw _privateConstructorUsedError;
-  moor.OrderingMode get orderingMode => throw _privateConstructorUsedError;
+  drift.OrderingMode get orderingMode => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $InstanceAnnouncementOrderingTermDataCopyWith<
@@ -241,7 +241,7 @@ abstract class $InstanceAnnouncementOrderingTermDataCopyWith<$Res> {
       _$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res>;
   $Res call(
       {InstanceAnnouncementOrderType orderType,
-      moor.OrderingMode orderingMode});
+      drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -266,7 +266,7 @@ class _$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -281,7 +281,7 @@ abstract class _$InstanceAnnouncementOrderingTermDataCopyWith<$Res>
   @override
   $Res call(
       {InstanceAnnouncementOrderType orderType,
-      moor.OrderingMode orderingMode});
+      drift.OrderingMode orderingMode});
 }
 
 /// @nodoc
@@ -310,7 +310,7 @@ class __$InstanceAnnouncementOrderingTermDataCopyWithImpl<$Res>
       orderingMode: orderingMode == freezed
           ? _value.orderingMode
           : orderingMode // ignore: cast_nullable_to_non_nullable
-              as moor.OrderingMode,
+              as drift.OrderingMode,
     ));
   }
 }
@@ -326,7 +326,7 @@ class _$_InstanceAnnouncementOrderingTermData
   @override
   final InstanceAnnouncementOrderType orderType;
   @override
-  final moor.OrderingMode orderingMode;
+  final drift.OrderingMode orderingMode;
 
   @override
   String toString() {
@@ -359,14 +359,14 @@ abstract class _InstanceAnnouncementOrderingTermData
     extends InstanceAnnouncementOrderingTermData {
   const factory _InstanceAnnouncementOrderingTermData(
           {required InstanceAnnouncementOrderType orderType,
-          required moor.OrderingMode orderingMode}) =
+          required drift.OrderingMode orderingMode}) =
       _$_InstanceAnnouncementOrderingTermData;
   const _InstanceAnnouncementOrderingTermData._() : super._();
 
   @override
   InstanceAnnouncementOrderType get orderType;
   @override
-  moor.OrderingMode get orderingMode;
+  drift.OrderingMode get orderingMode;
   @override
   @JsonKey(ignore: true)
   _$InstanceAnnouncementOrderingTermDataCopyWith<

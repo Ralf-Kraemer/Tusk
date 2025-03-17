@@ -1,11 +1,11 @@
 import 'package:fedi_app/app/account/database/account_followings_database_model.dart';
 import 'package:fedi_app/app/database/app_database.dart';
 import 'package:fedi_app/app/database/dao/database_dao.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'account_followings_database_dao.g.dart';
 
-@UseDao(
+@DriftAccessor(
   tables: [
     DbAccountFollowings,
   ],

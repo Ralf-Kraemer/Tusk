@@ -71,7 +71,7 @@ class StatusCachedPaginationListMediaWidget
       length += 1;
     }
 
-    return StaggeredGridView.countBuilder(
+    return StaggeredGridTile.countBuilder(
       // ignore: no-magic-number
       crossAxisCount: 4,
       itemCount: length,

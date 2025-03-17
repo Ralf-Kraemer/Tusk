@@ -20,7 +20,7 @@ class PhotoManagerMediaDeviceFileBloc extends MediaDeviceFileBloc {
 
   @override
   Future<Uint8List?> loadThumbData({required int width, required int height}) =>
-      assetEntity.thumbDataWithSize(width, height);
+      assetEntity.thumbnailDataWithSize(ThumbnailSize(width, height));
 
   @override
   MediaDeviceFileType get type => assetEntity.type.mapToMediaDeviceFileType();

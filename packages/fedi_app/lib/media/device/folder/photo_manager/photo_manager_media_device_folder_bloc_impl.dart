@@ -19,14 +19,11 @@ class PhotoManagerMediaDeviceFolderBloc extends MediaDeviceFolderBloc {
     IMediaDeviceFileMetadata? olderThan,
     IMediaDeviceFileMetadata? newerThan,
   }) async {
-    var assetEntities = await folder.assetPathEntity.getAssetListPaged(
-      pageIndex!,
-      itemsCountPerPage!,
-    );
-    // var start = pageIndex * itemsCountPerPage;
-    // var end = start + itemsCountPerPage;
-    // var assetEntities = await folder.assetPathEntity
-    //     .getAssetListRange(start: start, end: end);
+
+    
+    int start = pageIndex! * itemsCountPerPage!;
+    int end = start + itemsCountPerPage;
+    var assetEntities = await folder.assetPathEntity.getAssetListRange(start: start, end: end);
 
     return assetEntities
         .map(

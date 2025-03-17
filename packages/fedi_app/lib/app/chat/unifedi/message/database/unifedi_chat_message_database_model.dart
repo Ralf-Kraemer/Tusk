@@ -1,5 +1,5 @@
 import 'package:fedi_app/app/moor/moor_converters.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 // todo: add foreign keys
 @DataClassName('DbChatMessage')

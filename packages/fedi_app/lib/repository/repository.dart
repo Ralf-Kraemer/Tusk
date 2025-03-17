@@ -1,5 +1,5 @@
 import 'package:fedi_app/repository/repository_model.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 abstract class IBaseReadRepository<DbId> {
   Future<int> countAll();
